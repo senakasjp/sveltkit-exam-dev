@@ -14,13 +14,12 @@
     }
     onMount(fetchData);
   }
+
+
 </script>
 
 <div class="overflow-hidden bg-gray-50 dark:bg-gray-900">
   <Navbar />
   <Router {routes} />
-    <Body />
   <Footer />
 </div>
-
-

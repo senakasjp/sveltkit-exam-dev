@@ -43,4 +43,4 @@ npm run deploy
 ```
 
 This will deploy your GitHub page to `https://<username>.github.io/<repository name>` URL. Don’t forget to change the username and repository name to your personal Github username and repository.
-It may take a couple of minutes. You can check the progress in GitHub Actions tab.
+It may take a couple of minutes. You can check the progress in GitHub Actions tab.# sveltkit-exam-dev

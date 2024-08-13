@@ -26,6 +26,7 @@
     "vite": "^4.3.9"
   },
   "dependencies": {
+    "flowbite-svelte-icons": "^1.6.1",
     "svelte-spa-router": "^3.3.0",
     "timeago.js": "^4.0.2",
     "url-slug": "^3.0.4"

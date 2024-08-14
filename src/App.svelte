@@ -18,8 +18,15 @@
 
 </script>
 
-<div class="overflow-hidden bg-gray-50 dark:bg-gray-900">
+<div class="flex flex-col min-h-screen">
+  <!-- Navbar remains at the top -->
   <Navbar />
-  <Router {routes} />
+  
+  <!-- Router or main content will take up all available space -->
+  <div class="flex-grow">
+    <Router {routes} />
+  </div>
+  
+  <!-- Footer is placed at the bottom -->
   <Footer />
 </div>

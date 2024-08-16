@@ -11,7 +11,7 @@
     class="dribble-icon"
   >
     <!-- SVG Path data for the Dribble icon -->
-    <path d="..." />
+    <path d="M10 10 H 90 V 90 H 10 Z" />
   </svg>
   
   <style>

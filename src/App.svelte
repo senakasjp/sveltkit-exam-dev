@@ -15,18 +15,15 @@
     onMount(fetchData);
   }
 
-
+  console.log("App loaded with routes:", routes);
 </script>
 
 <div class="flex flex-col min-h-screen">
-  <!-- Navbar remains at the top -->
   <Navbar />
-  
-  <!-- Router or main content will take up all available space -->
+
   <div class="flex-grow">
     <Router {routes} />
   </div>
-  
-  <!-- Footer is placed at the bottom -->
+
   <Footer />
 </div>

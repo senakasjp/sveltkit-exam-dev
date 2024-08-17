@@ -18,6 +18,7 @@
   console.log("App loaded with routes:", routes);
 </script>
 
+
 <div class="flex flex-col min-h-screen">
   <Navbar />
 

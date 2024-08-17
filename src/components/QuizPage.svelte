@@ -1,5 +1,9 @@
 <script>
   import { Radio } from 'flowbite-svelte';
+  import LeftColumn from './LeftColumn.svelte';
+
+  export let rightTitle = "Right Column Title";
+  export let rightContent = "Right Column Content";
   
   let question = "What is the capital of Uruguay?";
   let options = [
@@ -17,8 +21,14 @@
 </script>
 
 
-<div class="flex items-center justify-center my-10 ">
-  <div class="w-full max-w-6xl p-8 bg-white dark:bg-gray-800 rounded-lg shadow-lg">
+<div class="grid grid-cols-12 gap-4 p-4 w-full max-w-screen-2xl mx-auto">
+  <!-- Left Column -->
+  <div class="col-span-12 md:col-span-3 bg-white dark:bg-gray-800 p-6 rounded-lg">
+    <LeftColumn title="Left Column Title" content="This is the content for the left column." />
+  </div>
+  
+  <!-- Right Column -->
+  <div class="col-span-12 md:col-span-9 bg-white dark:bg-gray-800 p-6 rounded-lg">
     <!-- Question -->
     <h2 class="font-semibold mb-8 text-gray-900 dark:text-white">{question}</h2>
 
@@ -38,3 +48,6 @@
     </div>
   </div>
 </div>
+
+
+

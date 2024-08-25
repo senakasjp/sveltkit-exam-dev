@@ -1,0 +1,15 @@
+
+services:
+  svelte-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"  # Map the Vite development server port
+    volumes:
+      - .:/app       # Mount the entire app directory for live reloading
+      - /app/node_modules  # Prevent node_modules from being overwritten
+    environment:
+      NODE_ENV: development
+    command: npm run dev -- --host  # Run the development server
+    restart: unless-stopped
